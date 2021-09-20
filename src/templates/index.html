@@ -1,0 +1,26 @@
+---
+title: Index page
+---
+{% extends "layouts/_layout.html" %}
+
+{% block content %}
+	
+	
+	{# partial example #}
+	{% include "partials/_aside.html" %}
+	{% include "partials/_header.html" %}
+	{% include "partials/_sidebar.html" %}
+
+	 {# mixin example #}
+	{{mixins.icon('burger')}}
+
+
+	<!-- {# data usage example #}
+		{% import "data/data.html" as tests %}
+		
+		{% for test in tests.list %}
+		<li>{{test.title}}</li>
+		{% endfor %}
+	{# end of example #} -->
+
+{% endblock %}
