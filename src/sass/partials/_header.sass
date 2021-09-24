@@ -13,7 +13,11 @@
     flex: 1 0
 
 
-
+.container
+  max-width: 1600px
+  margin: 0 auto
+  box-sizing: border-box
+  padding: 0 32px
 
 .js-burger
   width: 40px
@@ -68,14 +72,14 @@
 
   &__icon-search
     position: absolute
-    top: 8px
+    top: 7px
     left: 10px
     cursor: text
 
   &__microphone
     position: absolute
     top: 10px
-    right: 11.5%
+    right: calc(10% + 10px)
     cursor: pointer
     fill:#3e77aa
     background-color: none 
@@ -83,7 +87,7 @@
     &::before
       content: ""
       position: absolute
-      left: -14px
+      left: -12px
       top: 40%
       transform: translateY(-50%)
       height: 20px
@@ -95,7 +99,7 @@
   &__btn
     display: inline-block
     position: absolute
-    width: 10%
+    min-width: 10%
     padding: 0 16px
     margin: 0
     border-radius: 0 3px 3px 0
@@ -163,7 +167,7 @@
   &:hover
     background-color: hsla(0,0%,100%,.2)
 
-.icon__basket 
+.icon__bascket 
   display: flex
   justify-content: center
   align-items: center
