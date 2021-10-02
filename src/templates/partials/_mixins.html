@@ -1,3 +1,33 @@
 {% macro icon(i) %}
-<svg class="icon {{i}}__icon"><use xlink:href="img/sprite.svg#{{i}}__icon"></use></svg>
+<svg class="icon icon-{{i}}">
+  <use xlink:href="img/sprite.svg#icon-{{i}}"></use>
+</svg>
+{% endmacro %}
+
+{% import "../data/products.html" as data %}
+{% macro products(title) %}
+<section class="products-preview">
+
+  <h2 class="products-preview__title">
+    {{title}}
+  </h2>
+  <div class="products-preview__products">
+    {% for product in data.products %}
+    <div class="products-preview__product-card">
+      {% include "components/main/_product-small-card.html" %}
+
+    </div>
+
+    {% endfor %}
+
+  </div>
+  <a href="#" class="products-preview__link">
+    Все акции
+    <svg class="products-preview__icon" viewBox="0 0 1024 1024">
+      <path
+        d="M512.026 128.021c-23.565 0-42.667 19.102-42.667 42.667v561.92l-208.213-208.213c-16.713-16.713-43.825-16.666-60.48 0.107-16.571 16.687-16.523 43.635 0.107 60.267l311.253 311.253 311.241-311.241c16.619-16.619 16.619-43.567 0-60.186-16.61-16.61-43.537-16.623-60.16-0.030l-208.414 208.043v-561.92c0-23.564-19.102-42.667-42.667-42.667z">
+      </path>
+    </svg>
+  </a>
+</section>
 {% endmacro %}

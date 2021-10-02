@@ -1,7 +1,7 @@
 import "slick-carousel";
 import { btnPrev, btnNext } from './components/slick-btns'
 
-$(".slider").slick({
+$(".js-slider").slick({
   autoplay: true,
   arrows: true,
   prevArrow: btnPrev,

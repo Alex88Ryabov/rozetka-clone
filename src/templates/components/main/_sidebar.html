@@ -1,0 +1,47 @@
+<sidebar class="sidebar">
+  <div class="sidebar__in">
+    <ul class="sidebar__list">
+      {% import "../../data/sidebar-items.html" as data %}
+      {% for item in data.sidebarItems %}
+      <li class="sidebar__item">
+        <a href="{{item.href}}" class="sidebar__link">
+          {{mixins.icon(item.svg)}}
+          {{item.name}}
+        </a>
+      </li>
+
+      {% endfor %}
+    </ul>
+    <a href="#" class="sidebar__help">
+      {{mixins.icon('help-center')}}
+      Справочный центр
+    </a>
+    <div class="sidebar__account">
+      {% include "../sidebar/_account.html" %}
+    </div>
+    <div class="sidebar__stores">
+      <div class="stores">
+        <h4 class="stores__title">
+          Устанавливайте наши приложения
+        </h4>
+        <a href="#" class="stores__link">
+          <img src="../img/button-google-play-ru.svg" alt="" class="stores__img">
+        </a>
+        <a href="#" class="stores__link">
+          <img src="../img/button-appstore-ru.svg" alt="" class="stores__img">
+        </a>
+        
+      </div>
+      
+    </div>
+    <div class="sidebar__social">
+      {% include "../_social.html" %}
+    </div>
+    <div class="sidebar__links">
+      {% include "../sidebar/_links.html" %}
+    </div>
+    <div class="sidebar__copyright">
+      {% include "../sidebar/_copyright.html" %}
+    </div>
+  </div>
+</sidebar>
