@@ -1,4 +1,4 @@
-<div class="product-small-card">
+<div class="product-small-card {{product.class}} js-product">
   <button class="product-small-card__btn">
     <svg class="product-small-card__icon product-small-card__icon--active" width="20" height="17.6"
       viewBox="0 0 1024 1024">
@@ -10,7 +10,9 @@
   <a href="#" class="product-small-card__link">
     <img src="{{product.imgUrl}}" alt="{{product.name}}" class="product-small-card__img">
   </a>
-  <h5 class="product-small-card__title">{{product.name}}</h5>
+  <h5 class="product-small-card__title">
+    {{product.name}}
+  </h5>
   <div class="product-small-card__price-old">
     {{product.priceOld}}
     <span class="product-small-card__currency-old">

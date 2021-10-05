@@ -1,0 +1,14 @@
+<div class="social">
+  <h4 class="social__title">
+    Мы в социальных сетях
+  </h4>
+  <div class="social__links">
+    {% import "../../data/social-icons.html" as data %}
+    {% for link in data.socialLinks %}
+    <a href="{{link.linkUrl}}" class="social__link {{link.class}}">
+      {{mixins.icon(link.svg)}}
+    </a>
+    {% endfor %}
+  </div>
+
+</div>

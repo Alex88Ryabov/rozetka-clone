@@ -176,9 +176,11 @@
                 <li class="info__part">
                   <div class="info__select">
                     <h4 class="info__title"> Партнерам </h4>
-                    <svg class="icon icon-arrow-small-down">
-                      <use xlink:href="img/sprite.svg#icon-arrow-small-down"></use>
-                    </svg>
+                    <button class="info__btn">
+                      <svg class="icon icon-arrow-small-down">
+                        <use xlink:href="img/sprite.svg#icon-arrow-small-down"></use>
+                      </svg>
+                    </button>
                   </div>
                   <ul class="info__list">
                     <li class="info__item">
@@ -197,9 +199,11 @@
                 <li class="info__part">
                   <div class="info__select">
                     <h4 class="info__title"> Сервисы </h4>
-                    <svg class="icon icon-arrow-small-down">
-                      <use xlink:href="img/sprite.svg#icon-arrow-small-down"></use>
-                    </svg>
+                    <button class="info__btn">
+                      <svg class="icon icon-arrow-small-down">
+                        <use xlink:href="img/sprite.svg#icon-arrow-small-down"></use>
+                      </svg>
+                    </button>
                   </div>
                   <ul class="info__list">
                     <li class="info__item">
@@ -223,14 +227,16 @@
             </div>
           </div>
           <div class="side-menu__app">
-            <div class="app">
-              <h4 class="app__title"> Скачивайте наши приложения </h4>
-              <a href="#" class="app__link">
-                <img src="../img/button-google-play-ru.svg" alt="" class="app__img">
-              </a>
-              <a href="#" class="app__link">
-                <img src="../img/button-appstore-ru.svg" alt="" class="app__img">
-              </a>
+            <div class="apps">
+              <h4 class="apps__title"> Скачивайте наши приложения </h4>
+              <div class="apps__links">
+                <a href="#" class="apps__link">
+                  <img src="../img/button-google-play-ru.svg" alt="playmarket" class="apps__img">
+                </a>
+                <a href="#" class="apps__link">
+                  <img src="../img/button-appstore-ru.svg" alt="appsstore" class="apps__img">
+                </a>
+              </div>
             </div>
           </div>
         </div>
@@ -248,14 +254,14 @@
                   <use xlink:href="img/sprite.svg#icon-twitter"></use>
                 </svg>
               </a>
-              <a href="#" class="social__link social__link--ins">
-                <svg class="icon icon-instagram">
-                  <use xlink:href="img/sprite.svg#icon-instagram"></use>
-                </svg>
-              </a>
               <a href="#" class="social__link social__link--you">
                 <svg class="icon icon-youtube">
                   <use xlink:href="img/sprite.svg#icon-youtube"></use>
+                </svg>
+              </a>
+              <a href="#" class="social__link social__link--ins">
+                <svg class="icon icon-instagram">
+                  <use xlink:href="img/sprite.svg#icon-instagram"></use>
                 </svg>
               </a>
               <a href="#" class="social__link social__link--vib">
@@ -287,21 +293,23 @@
         <div class="container">
           <div class="header__in">
             <div class="header__burger">
-              <div class="burger">
+              <btn class="burger">
                 <div class="js-burger">
-                  <svg class="burger__icon" version="1.1" xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 1024 1024">
-                    <title></title>
-                    <g id="icomoon-ignore">
-                    </g>
-                    <path fill="#fff" d="M85.333 128h853.333c23.564 0 42.667 19.103 42.667 42.667s-19.103 42.667-42.667 42.667h-853.333c-23.564 0-42.667-19.103-42.667-42.667s19.103-42.667 42.667-42.667z">
-                    </path>
-                    <path fill="#fff" d="M85.333 469.333h853.333c23.564 0 42.667 19.103 42.667 42.667s-19.103 42.667-42.667 42.667h-853.333c-23.564 0-42.667-19.103-42.667-42.667s19.103-42.667 42.667-42.667z">
-                    </path>
-                    <path fill="#fff" d="M85.333 810.667h853.333c23.564 0 42.667 19.103 42.667 42.667s-19.103 42.667-42.667 42.667h-853.333c-23.564 0-42.667-19.103-42.667-42.667s19.103-42.667 42.667-42.667z">
-                    </path>
-                  </svg>
+                  <button class="burger__btn">
+                    <svg class="burger__icon" version="1.1" xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 1024 1024">
+                      <title></title>
+                      <g id="icomoon-ignore">
+                      </g>
+                      <path fill="#fff" d="M85.333 128h853.333c23.564 0 42.667 19.103 42.667 42.667s-19.103 42.667-42.667 42.667h-853.333c-23.564 0-42.667-19.103-42.667-42.667s19.103-42.667 42.667-42.667z">
+                      </path>
+                      <path fill="#fff" d="M85.333 469.333h853.333c23.564 0 42.667 19.103 42.667 42.667s-19.103 42.667-42.667 42.667h-853.333c-23.564 0-42.667-19.103-42.667-42.667s19.103-42.667 42.667-42.667z">
+                      </path>
+                      <path fill="#fff" d="M85.333 810.667h853.333c23.564 0 42.667 19.103 42.667 42.667s-19.103 42.667-42.667 42.667h-853.333c-23.564 0-42.667-19.103-42.667-42.667s19.103-42.667 42.667-42.667z">
+                      </path>
+                    </svg>
+                  </button>
                 </div>
-              </div>
+              </btn>
             </div>
             <div class="header__logo">
               <div class="logo">
@@ -454,109 +462,134 @@
                   <a href="#" class="sidebar__link">
                     <svg class="icon icon-laptops">
                       <use xlink:href="img/sprite.svg#icon-laptops"></use>
-                    </svg> Ноутбуки и компьютеры </a>
+                    </svg> Ноутбуки и компьютеры <img src="" class="sidebar__img">
+                  </a>
                 </li>
                 <li class="sidebar__item">
                   <a href="#" class="sidebar__link">
                     <svg class="icon icon-smartphones">
                       <use xlink:href="img/sprite.svg#icon-smartphones"></use>
-                    </svg> Смартфоны, ТВ и электроника </a>
+                    </svg> Смартфоны, ТВ и электроника <img src="" class="sidebar__img">
+                  </a>
                 </li>
                 <li class="sidebar__item">
                   <a href="#" class="sidebar__link">
                     <svg class="icon icon-gamers">
                       <use xlink:href="img/sprite.svg#icon-gamers"></use>
-                    </svg> Товары для геймеров </a>
+                    </svg> Товары для геймеров <img src="" class="sidebar__img">
+                  </a>
                 </li>
                 <li class="sidebar__item">
                   <a href="#" class="sidebar__link">
                     <svg class="icon icon-appliances">
                       <use xlink:href="img/sprite.svg#icon-appliances"></use>
-                    </svg> Бытовая техника </a>
+                    </svg> Бытовая техника <img src="" class="sidebar__img">
+                  </a>
                 </li>
                 <li class="sidebar__item">
                   <a href="#" class="sidebar__link">
                     <svg class="icon icon-for-home">
                       <use xlink:href="img/sprite.svg#icon-for-home"></use>
-                    </svg> Товары для дома </a>
+                    </svg> Товары для дома <img src="" class="sidebar__img">
+                  </a>
                 </li>
                 <li class="sidebar__item">
                   <a href="#" class="sidebar__link">
                     <svg class="icon icon-instruments">
                       <use xlink:href="img/sprite.svg#icon-instruments"></use>
-                    </svg> Инструменты и автотовары </a>
+                    </svg> Инструменты и автотовары <img src="" class="sidebar__img">
+                  </a>
                 </li>
                 <li class="sidebar__item">
                   <a href="#" class="sidebar__link">
                     <svg class="icon icon-plumbing">
                       <use xlink:href="img/sprite.svg#icon-plumbing"></use>
-                    </svg> Сантехника и ремонт </a>
+                    </svg> Сантехника и ремонт <img src="" class="sidebar__img">
+                  </a>
                 </li>
                 <li class="sidebar__item">
                   <a href="#" class="sidebar__link">
                     <svg class="icon icon-garden">
                       <use xlink:href="img/sprite.svg#icon-garden"></use>
-                    </svg> Дача, сад и огород </a>
+                    </svg> Дача, сад и огород <img src="" class="sidebar__img">
+                  </a>
                 </li>
                 <li class="sidebar__item">
                   <a href="#" class="sidebar__link">
                     <svg class="icon icon-sport">
                       <use xlink:href="img/sprite.svg#icon-sport"></use>
-                    </svg> Спорт и увлечения </a>
+                    </svg> Спорт и увлечения <img src="" class="sidebar__img">
+                  </a>
                 </li>
                 <li class="sidebar__item">
                   <a href="#" class="sidebar__link">
                     <svg class="icon icon-wear">
                       <use xlink:href="img/sprite.svg#icon-wear"></use>
-                    </svg> Одежда, обувь и украшения </a>
+                    </svg> Одежда, обувь и украшения <img src="" class="sidebar__img">
+                  </a>
                 </li>
                 <li class="sidebar__item">
                   <a href="#" class="sidebar__link">
                     <svg class="icon icon-beauty">
                       <use xlink:href="img/sprite.svg#icon-beauty"></use>
-                    </svg> Красота и здоровье </a>
+                    </svg> Красота и здоровье <img src="" class="sidebar__img">
+                  </a>
                 </li>
                 <li class="sidebar__item">
                   <a href="#" class="sidebar__link">
                     <svg class="icon icon-for-kids">
                       <use xlink:href="img/sprite.svg#icon-for-kids"></use>
-                    </svg> Детские товары </a>
+                    </svg> Детские товары <img src="./img/toys.png" class="sidebar__img">
+                  </a>
                 </li>
                 <li class="sidebar__item">
                   <a href="#" class="sidebar__link">
                     <svg class="icon icon-stationery">
                       <use xlink:href="img/sprite.svg#icon-stationery"></use>
-                    </svg> Канцтовары и книги </a>
+                    </svg> Канцтовары и книги <img src="" class="sidebar__img">
+                  </a>
                 </li>
                 <li class="sidebar__item">
                   <a href="#" class="sidebar__link">
                     <svg class="icon icon-alcohol">
                       <use xlink:href="img/sprite.svg#icon-alcohol"></use>
-                    </svg> Алкогольные напитки и продукты </a>
+                    </svg> Алкогольные напитки и продукты <img src="" class="sidebar__img">
+                  </a>
                 </li>
                 <li class="sidebar__item">
                   <a href="#" class="sidebar__link">
                     <svg class="icon icon-business">
                       <use xlink:href="img/sprite.svg#icon-business"></use>
-                    </svg> Товары для бузнеса </a>
+                    </svg> Товары для бузнеса <img src="" class="sidebar__img">
+                  </a>
                 </li>
                 <li class="sidebar__item">
                   <a href="#" class="sidebar__link">
                     <svg class="icon icon-services">
                       <use xlink:href="img/sprite.svg#icon-services"></use>
-                    </svg> Услуги и сервисы </a>
+                    </svg> Услуги и сервисы <img src="" class="sidebar__img">
+                  </a>
                 </li>
                 <li class="sidebar__item">
                   <a href="#" class="sidebar__link">
                     <svg class="icon icon-tourism">
                       <use xlink:href="img/sprite.svg#icon-tourism"></use>
-                    </svg> Туры и отдых </a>
+                    </svg> Туры и отдых <img src="" class="sidebar__img">
+                  </a>
                 </li>
                 <li class="sidebar__item">
                   <a href="#" class="sidebar__link">
                     <svg class="icon icon-stock">
                       <use xlink:href="img/sprite.svg#icon-stock"></use>
-                    </svg> Акции </a>
+                    </svg> Акции <img src="" class="sidebar__img">
+                  </a>
+                </li>
+                <li class="sidebar__item">
+                  <a href="#" class="sidebar__link">
+                    <svg class="icon icon-seller">
+                      <use xlink:href="img/sprite.svg#icon-seller"></use>
+                    </svg> Держите скидки до 45% <img src="./img/leaf.png" class="sidebar__img">
+                  </a>
                 </li>
               </ul>
               <a href="#" class="sidebar__help">
@@ -574,10 +607,10 @@
                 <div class="stores">
                   <h4 class="stores__title"> Устанавливайте наши приложения </h4>
                   <a href="#" class="stores__link">
-                    <img src="../img/button-google-play-ru.svg" alt="" class="stores__img">
+                    <img src="./img/button-google-play-ru.svg" alt="" class="stores__img">
                   </a>
                   <a href="#" class="stores__link">
-                    <img src="../img/button-appstore-ru.svg" alt="" class="stores__img">
+                    <img src="./img/button-appstore-ru.svg" alt="" class="stores__img">
                   </a>
                 </div>
               </div>
@@ -595,14 +628,14 @@
                         <use xlink:href="img/sprite.svg#icon-twitter"></use>
                       </svg>
                     </a>
-                    <a href="#" class="social__link social__link--ins">
-                      <svg class="icon icon-instagram">
-                        <use xlink:href="img/sprite.svg#icon-instagram"></use>
-                      </svg>
-                    </a>
                     <a href="#" class="social__link social__link--you">
                       <svg class="icon icon-youtube">
                         <use xlink:href="img/sprite.svg#icon-youtube"></use>
+                      </svg>
+                    </a>
+                    <a href="#" class="social__link social__link--ins">
+                      <svg class="icon icon-instagram">
+                        <use xlink:href="img/sprite.svg#icon-instagram"></use>
                       </svg>
                     </a>
                     <a href="#" class="social__link social__link--vib">
@@ -759,11 +792,11 @@
               </div>
             </div>
             <div class="main__products">
-              <section class="products-preview">
+              <section class="products-preview js-products">
                 <h2 class="products-preview__title"> Последние просмотренные товары </h2>
                 <div class="products-preview__products">
                   <div class="products-preview__product-card">
-                    <div class="product-small-card">
+                    <div class="product-small-card  js-product">
                       <button class="product-small-card__btn">
                         <svg class="product-small-card__icon product-small-card__icon--active" width="20" height="17.6" viewBox="0 0 1024 1024">
                           <path d="M681.6 166c-67.6 0-129.6 31.6-169.6 83.6-40-52-102-83.6-169.6-83.6-118.2 0-214.4 96.6-214.4 215.4 0 55.8 21.2 108.8 59.8 149.2l324.2 327.4 318.4-321.6c42-40.6 65.6-95.8 65.6-155 0-118.8-96.2-215.4-214.4-215.4v0z">
@@ -773,7 +806,7 @@
                       <a href="#" class="product-small-card__link">
                         <img src="./img/17400113.jpg" alt="Робот для мойки окон LogicPower LPW-002" class="product-small-card__img">
                       </a>
-                      <h5 class="product-small-card__title">Робот для мойки окон LogicPower LPW-002</h5>
+                      <h5 class="product-small-card__title"> Робот для мойки окон LogicPower LPW-002 </h5>
                       <div class="product-small-card__price-old"> 5699 <span class="product-small-card__currency-old"> ₴ </span>
                       </div>
                       <div class="product-small-card__price"> 4589 <span class="product-small-card__currency"> ₴ </span>
@@ -781,7 +814,7 @@
                     </div>
                   </div>
                   <div class="products-preview__product-card">
-                    <div class="product-small-card">
+                    <div class="product-small-card  js-product">
                       <button class="product-small-card__btn">
                         <svg class="product-small-card__icon product-small-card__icon--active" width="20" height="17.6" viewBox="0 0 1024 1024">
                           <path d="M681.6 166c-67.6 0-129.6 31.6-169.6 83.6-40-52-102-83.6-169.6-83.6-118.2 0-214.4 96.6-214.4 215.4 0 55.8 21.2 108.8 59.8 149.2l324.2 327.4 318.4-321.6c42-40.6 65.6-95.8 65.6-155 0-118.8-96.2-215.4-214.4-215.4v0z">
@@ -791,7 +824,7 @@
                       <a href="#" class="product-small-card__link">
                         <img src="./img/17400113.jpg" alt="Робот для мойки окон LogicPower LPW-002" class="product-small-card__img">
                       </a>
-                      <h5 class="product-small-card__title">Робот для мойки окон LogicPower LPW-002</h5>
+                      <h5 class="product-small-card__title"> Робот для мойки окон LogicPower LPW-002 </h5>
                       <div class="product-small-card__price-old"> 5699 <span class="product-small-card__currency-old"> ₴ </span>
                       </div>
                       <div class="product-small-card__price"> 4589 <span class="product-small-card__currency"> ₴ </span>
@@ -799,7 +832,7 @@
                     </div>
                   </div>
                   <div class="products-preview__product-card">
-                    <div class="product-small-card">
+                    <div class="product-small-card  js-product">
                       <button class="product-small-card__btn">
                         <svg class="product-small-card__icon product-small-card__icon--active" width="20" height="17.6" viewBox="0 0 1024 1024">
                           <path d="M681.6 166c-67.6 0-129.6 31.6-169.6 83.6-40-52-102-83.6-169.6-83.6-118.2 0-214.4 96.6-214.4 215.4 0 55.8 21.2 108.8 59.8 149.2l324.2 327.4 318.4-321.6c42-40.6 65.6-95.8 65.6-155 0-118.8-96.2-215.4-214.4-215.4v0z">
@@ -809,7 +842,7 @@
                       <a href="#" class="product-small-card__link">
                         <img src="./img/17400113.jpg" alt="Робот для мойки окон LogicPower LPW-002" class="product-small-card__img">
                       </a>
-                      <h5 class="product-small-card__title">Робот для мойки окон LogicPower LPW-002</h5>
+                      <h5 class="product-small-card__title"> Робот для мойки окон LogicPower LPW-002 </h5>
                       <div class="product-small-card__price-old"> 5699 <span class="product-small-card__currency-old"> ₴ </span>
                       </div>
                       <div class="product-small-card__price"> 4589 <span class="product-small-card__currency"> ₴ </span>
@@ -817,7 +850,7 @@
                     </div>
                   </div>
                   <div class="products-preview__product-card">
-                    <div class="product-small-card">
+                    <div class="product-small-card  js-product">
                       <button class="product-small-card__btn">
                         <svg class="product-small-card__icon product-small-card__icon--active" width="20" height="17.6" viewBox="0 0 1024 1024">
                           <path d="M681.6 166c-67.6 0-129.6 31.6-169.6 83.6-40-52-102-83.6-169.6-83.6-118.2 0-214.4 96.6-214.4 215.4 0 55.8 21.2 108.8 59.8 149.2l324.2 327.4 318.4-321.6c42-40.6 65.6-95.8 65.6-155 0-118.8-96.2-215.4-214.4-215.4v0z">
@@ -827,7 +860,7 @@
                       <a href="#" class="product-small-card__link">
                         <img src="./img/17400113.jpg" alt="Робот для мойки окон LogicPower LPW-002" class="product-small-card__img">
                       </a>
-                      <h5 class="product-small-card__title">Робот для мойки окон LogicPower LPW-002</h5>
+                      <h5 class="product-small-card__title"> Робот для мойки окон LogicPower LPW-002 </h5>
                       <div class="product-small-card__price-old"> 5699 <span class="product-small-card__currency-old"> ₴ </span>
                       </div>
                       <div class="product-small-card__price"> 4589 <span class="product-small-card__currency"> ₴ </span>
@@ -835,7 +868,7 @@
                     </div>
                   </div>
                   <div class="products-preview__product-card">
-                    <div class="product-small-card">
+                    <div class="product-small-card  js-product">
                       <button class="product-small-card__btn">
                         <svg class="product-small-card__icon product-small-card__icon--active" width="20" height="17.6" viewBox="0 0 1024 1024">
                           <path d="M681.6 166c-67.6 0-129.6 31.6-169.6 83.6-40-52-102-83.6-169.6-83.6-118.2 0-214.4 96.6-214.4 215.4 0 55.8 21.2 108.8 59.8 149.2l324.2 327.4 318.4-321.6c42-40.6 65.6-95.8 65.6-155 0-118.8-96.2-215.4-214.4-215.4v0z">
@@ -845,7 +878,7 @@
                       <a href="#" class="product-small-card__link">
                         <img src="./img/17400113.jpg" alt="Робот для мойки окон LogicPower LPW-002" class="product-small-card__img">
                       </a>
-                      <h5 class="product-small-card__title">Робот для мойки окон LogicPower LPW-002</h5>
+                      <h5 class="product-small-card__title"> Робот для мойки окон LogicPower LPW-002 </h5>
                       <div class="product-small-card__price-old"> 5699 <span class="product-small-card__currency-old"> ₴ </span>
                       </div>
                       <div class="product-small-card__price"> 4589 <span class="product-small-card__currency"> ₴ </span>
@@ -853,7 +886,7 @@
                     </div>
                   </div>
                   <div class="products-preview__product-card">
-                    <div class="product-small-card">
+                    <div class="product-small-card  js-product">
                       <button class="product-small-card__btn">
                         <svg class="product-small-card__icon product-small-card__icon--active" width="20" height="17.6" viewBox="0 0 1024 1024">
                           <path d="M681.6 166c-67.6 0-129.6 31.6-169.6 83.6-40-52-102-83.6-169.6-83.6-118.2 0-214.4 96.6-214.4 215.4 0 55.8 21.2 108.8 59.8 149.2l324.2 327.4 318.4-321.6c42-40.6 65.6-95.8 65.6-155 0-118.8-96.2-215.4-214.4-215.4v0z">
@@ -863,7 +896,115 @@
                       <a href="#" class="product-small-card__link">
                         <img src="./img/17400113.jpg" alt="Робот для мойки окон LogicPower LPW-002" class="product-small-card__img">
                       </a>
-                      <h5 class="product-small-card__title">Робот для мойки окон LogicPower LPW-002</h5>
+                      <h5 class="product-small-card__title"> Робот для мойки окон LogicPower LPW-002 </h5>
+                      <div class="product-small-card__price-old"> 5699 <span class="product-small-card__currency-old"> ₴ </span>
+                      </div>
+                      <div class="product-small-card__price"> 4589 <span class="product-small-card__currency"> ₴ </span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="products-preview__product-card">
+                    <div class="product-small-card hidden js-product">
+                      <button class="product-small-card__btn">
+                        <svg class="product-small-card__icon product-small-card__icon--active" width="20" height="17.6" viewBox="0 0 1024 1024">
+                          <path d="M681.6 166c-67.6 0-129.6 31.6-169.6 83.6-40-52-102-83.6-169.6-83.6-118.2 0-214.4 96.6-214.4 215.4 0 55.8 21.2 108.8 59.8 149.2l324.2 327.4 318.4-321.6c42-40.6 65.6-95.8 65.6-155 0-118.8-96.2-215.4-214.4-215.4v0z">
+                          </path>
+                        </svg>
+                      </button>
+                      <a href="#" class="product-small-card__link">
+                        <img src="./img/17400113.jpg" alt="Робот для мойки окон LogicPower LPW-002" class="product-small-card__img">
+                      </a>
+                      <h5 class="product-small-card__title"> Робот для мойки окон LogicPower LPW-002 </h5>
+                      <div class="product-small-card__price-old"> 5699 <span class="product-small-card__currency-old"> ₴ </span>
+                      </div>
+                      <div class="product-small-card__price"> 4589 <span class="product-small-card__currency"> ₴ </span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="products-preview__product-card">
+                    <div class="product-small-card hidden js-product">
+                      <button class="product-small-card__btn">
+                        <svg class="product-small-card__icon product-small-card__icon--active" width="20" height="17.6" viewBox="0 0 1024 1024">
+                          <path d="M681.6 166c-67.6 0-129.6 31.6-169.6 83.6-40-52-102-83.6-169.6-83.6-118.2 0-214.4 96.6-214.4 215.4 0 55.8 21.2 108.8 59.8 149.2l324.2 327.4 318.4-321.6c42-40.6 65.6-95.8 65.6-155 0-118.8-96.2-215.4-214.4-215.4v0z">
+                          </path>
+                        </svg>
+                      </button>
+                      <a href="#" class="product-small-card__link">
+                        <img src="./img/17400113.jpg" alt="Робот для мойки окон LogicPower LPW-002" class="product-small-card__img">
+                      </a>
+                      <h5 class="product-small-card__title"> Робот для мойки окон LogicPower LPW-002 </h5>
+                      <div class="product-small-card__price-old"> 5699 <span class="product-small-card__currency-old"> ₴ </span>
+                      </div>
+                      <div class="product-small-card__price"> 4589 <span class="product-small-card__currency"> ₴ </span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="products-preview__product-card">
+                    <div class="product-small-card hidden js-product">
+                      <button class="product-small-card__btn">
+                        <svg class="product-small-card__icon product-small-card__icon--active" width="20" height="17.6" viewBox="0 0 1024 1024">
+                          <path d="M681.6 166c-67.6 0-129.6 31.6-169.6 83.6-40-52-102-83.6-169.6-83.6-118.2 0-214.4 96.6-214.4 215.4 0 55.8 21.2 108.8 59.8 149.2l324.2 327.4 318.4-321.6c42-40.6 65.6-95.8 65.6-155 0-118.8-96.2-215.4-214.4-215.4v0z">
+                          </path>
+                        </svg>
+                      </button>
+                      <a href="#" class="product-small-card__link">
+                        <img src="./img/17400113.jpg" alt="Робот для мойки окон LogicPower LPW-002" class="product-small-card__img">
+                      </a>
+                      <h5 class="product-small-card__title"> Робот для мойки окон LogicPower LPW-002 </h5>
+                      <div class="product-small-card__price-old"> 5699 <span class="product-small-card__currency-old"> ₴ </span>
+                      </div>
+                      <div class="product-small-card__price"> 4589 <span class="product-small-card__currency"> ₴ </span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="products-preview__product-card">
+                    <div class="product-small-card hidden js-product">
+                      <button class="product-small-card__btn">
+                        <svg class="product-small-card__icon product-small-card__icon--active" width="20" height="17.6" viewBox="0 0 1024 1024">
+                          <path d="M681.6 166c-67.6 0-129.6 31.6-169.6 83.6-40-52-102-83.6-169.6-83.6-118.2 0-214.4 96.6-214.4 215.4 0 55.8 21.2 108.8 59.8 149.2l324.2 327.4 318.4-321.6c42-40.6 65.6-95.8 65.6-155 0-118.8-96.2-215.4-214.4-215.4v0z">
+                          </path>
+                        </svg>
+                      </button>
+                      <a href="#" class="product-small-card__link">
+                        <img src="./img/17400113.jpg" alt="Робот для мойки окон LogicPower LPW-002" class="product-small-card__img">
+                      </a>
+                      <h5 class="product-small-card__title"> Робот для мойки окон LogicPower LPW-002 </h5>
+                      <div class="product-small-card__price-old"> 5699 <span class="product-small-card__currency-old"> ₴ </span>
+                      </div>
+                      <div class="product-small-card__price"> 4589 <span class="product-small-card__currency"> ₴ </span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="products-preview__product-card">
+                    <div class="product-small-card hidden js-product">
+                      <button class="product-small-card__btn">
+                        <svg class="product-small-card__icon product-small-card__icon--active" width="20" height="17.6" viewBox="0 0 1024 1024">
+                          <path d="M681.6 166c-67.6 0-129.6 31.6-169.6 83.6-40-52-102-83.6-169.6-83.6-118.2 0-214.4 96.6-214.4 215.4 0 55.8 21.2 108.8 59.8 149.2l324.2 327.4 318.4-321.6c42-40.6 65.6-95.8 65.6-155 0-118.8-96.2-215.4-214.4-215.4v0z">
+                          </path>
+                        </svg>
+                      </button>
+                      <a href="#" class="product-small-card__link">
+                        <img src="./img/17400113.jpg" alt="Робот для мойки окон LogicPower LPW-002" class="product-small-card__img">
+                      </a>
+                      <h5 class="product-small-card__title"> Робот для мойки окон LogicPower LPW-002 </h5>
+                      <div class="product-small-card__price-old"> 5699 <span class="product-small-card__currency-old"> ₴ </span>
+                      </div>
+                      <div class="product-small-card__price"> 4589 <span class="product-small-card__currency"> ₴ </span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="products-preview__product-card">
+                    <div class="product-small-card hidden js-product">
+                      <button class="product-small-card__btn">
+                        <svg class="product-small-card__icon product-small-card__icon--active" width="20" height="17.6" viewBox="0 0 1024 1024">
+                          <path d="M681.6 166c-67.6 0-129.6 31.6-169.6 83.6-40-52-102-83.6-169.6-83.6-118.2 0-214.4 96.6-214.4 215.4 0 55.8 21.2 108.8 59.8 149.2l324.2 327.4 318.4-321.6c42-40.6 65.6-95.8 65.6-155 0-118.8-96.2-215.4-214.4-215.4v0z">
+                          </path>
+                        </svg>
+                      </button>
+                      <a href="#" class="product-small-card__link">
+                        <img src="./img/17400113.jpg" alt="Робот для мойки окон LogicPower LPW-002" class="product-small-card__img">
+                      </a>
+                      <h5 class="product-small-card__title"> Робот для мойки окон LogicPower LPW-002 </h5>
                       <div class="product-small-card__price-old"> 5699 <span class="product-small-card__currency-old"> ₴ </span>
                       </div>
                       <div class="product-small-card__price"> 4589 <span class="product-small-card__currency"> ₴ </span>
@@ -871,19 +1012,19 @@
                     </div>
                   </div>
                 </div>
-                <a href="#" class="products-preview__link"> Все акции <svg class="products-preview__icon" viewBox="0 0 1024 1024">
+                <button href="#" class="products-preview__btn js-products-open"> Все акции <svg class="products-preview__icon" viewBox="0 0 1024 1024">
                     <path d="M512.026 128.021c-23.565 0-42.667 19.102-42.667 42.667v561.92l-208.213-208.213c-16.713-16.713-43.825-16.666-60.48 0.107-16.571 16.687-16.523 43.635 0.107 60.267l311.253 311.253 311.241-311.241c16.619-16.619 16.619-43.567 0-60.186-16.61-16.61-43.537-16.623-60.16-0.030l-208.414 208.043v-561.92c0-23.564-19.102-42.667-42.667-42.667z">
                     </path>
                   </svg>
-                </a>
+                </button>
               </section>
             </div>
             <div class="main__products">
-              <section class="products-preview">
+              <section class="products-preview js-products">
                 <h2 class="products-preview__title"> Акционные предложения </h2>
                 <div class="products-preview__products">
                   <div class="products-preview__product-card">
-                    <div class="product-small-card">
+                    <div class="product-small-card  js-product">
                       <button class="product-small-card__btn">
                         <svg class="product-small-card__icon product-small-card__icon--active" width="20" height="17.6" viewBox="0 0 1024 1024">
                           <path d="M681.6 166c-67.6 0-129.6 31.6-169.6 83.6-40-52-102-83.6-169.6-83.6-118.2 0-214.4 96.6-214.4 215.4 0 55.8 21.2 108.8 59.8 149.2l324.2 327.4 318.4-321.6c42-40.6 65.6-95.8 65.6-155 0-118.8-96.2-215.4-214.4-215.4v0z">
@@ -893,7 +1034,7 @@
                       <a href="#" class="product-small-card__link">
                         <img src="./img/17400113.jpg" alt="Робот для мойки окон LogicPower LPW-002" class="product-small-card__img">
                       </a>
-                      <h5 class="product-small-card__title">Робот для мойки окон LogicPower LPW-002</h5>
+                      <h5 class="product-small-card__title"> Робот для мойки окон LogicPower LPW-002 </h5>
                       <div class="product-small-card__price-old"> 5699 <span class="product-small-card__currency-old"> ₴ </span>
                       </div>
                       <div class="product-small-card__price"> 4589 <span class="product-small-card__currency"> ₴ </span>
@@ -901,7 +1042,7 @@
                     </div>
                   </div>
                   <div class="products-preview__product-card">
-                    <div class="product-small-card">
+                    <div class="product-small-card  js-product">
                       <button class="product-small-card__btn">
                         <svg class="product-small-card__icon product-small-card__icon--active" width="20" height="17.6" viewBox="0 0 1024 1024">
                           <path d="M681.6 166c-67.6 0-129.6 31.6-169.6 83.6-40-52-102-83.6-169.6-83.6-118.2 0-214.4 96.6-214.4 215.4 0 55.8 21.2 108.8 59.8 149.2l324.2 327.4 318.4-321.6c42-40.6 65.6-95.8 65.6-155 0-118.8-96.2-215.4-214.4-215.4v0z">
@@ -911,7 +1052,7 @@
                       <a href="#" class="product-small-card__link">
                         <img src="./img/17400113.jpg" alt="Робот для мойки окон LogicPower LPW-002" class="product-small-card__img">
                       </a>
-                      <h5 class="product-small-card__title">Робот для мойки окон LogicPower LPW-002</h5>
+                      <h5 class="product-small-card__title"> Робот для мойки окон LogicPower LPW-002 </h5>
                       <div class="product-small-card__price-old"> 5699 <span class="product-small-card__currency-old"> ₴ </span>
                       </div>
                       <div class="product-small-card__price"> 4589 <span class="product-small-card__currency"> ₴ </span>
@@ -919,7 +1060,7 @@
                     </div>
                   </div>
                   <div class="products-preview__product-card">
-                    <div class="product-small-card">
+                    <div class="product-small-card  js-product">
                       <button class="product-small-card__btn">
                         <svg class="product-small-card__icon product-small-card__icon--active" width="20" height="17.6" viewBox="0 0 1024 1024">
                           <path d="M681.6 166c-67.6 0-129.6 31.6-169.6 83.6-40-52-102-83.6-169.6-83.6-118.2 0-214.4 96.6-214.4 215.4 0 55.8 21.2 108.8 59.8 149.2l324.2 327.4 318.4-321.6c42-40.6 65.6-95.8 65.6-155 0-118.8-96.2-215.4-214.4-215.4v0z">
@@ -929,7 +1070,7 @@
                       <a href="#" class="product-small-card__link">
                         <img src="./img/17400113.jpg" alt="Робот для мойки окон LogicPower LPW-002" class="product-small-card__img">
                       </a>
-                      <h5 class="product-small-card__title">Робот для мойки окон LogicPower LPW-002</h5>
+                      <h5 class="product-small-card__title"> Робот для мойки окон LogicPower LPW-002 </h5>
                       <div class="product-small-card__price-old"> 5699 <span class="product-small-card__currency-old"> ₴ </span>
                       </div>
                       <div class="product-small-card__price"> 4589 <span class="product-small-card__currency"> ₴ </span>
@@ -937,7 +1078,7 @@
                     </div>
                   </div>
                   <div class="products-preview__product-card">
-                    <div class="product-small-card">
+                    <div class="product-small-card  js-product">
                       <button class="product-small-card__btn">
                         <svg class="product-small-card__icon product-small-card__icon--active" width="20" height="17.6" viewBox="0 0 1024 1024">
                           <path d="M681.6 166c-67.6 0-129.6 31.6-169.6 83.6-40-52-102-83.6-169.6-83.6-118.2 0-214.4 96.6-214.4 215.4 0 55.8 21.2 108.8 59.8 149.2l324.2 327.4 318.4-321.6c42-40.6 65.6-95.8 65.6-155 0-118.8-96.2-215.4-214.4-215.4v0z">
@@ -947,7 +1088,7 @@
                       <a href="#" class="product-small-card__link">
                         <img src="./img/17400113.jpg" alt="Робот для мойки окон LogicPower LPW-002" class="product-small-card__img">
                       </a>
-                      <h5 class="product-small-card__title">Робот для мойки окон LogicPower LPW-002</h5>
+                      <h5 class="product-small-card__title"> Робот для мойки окон LogicPower LPW-002 </h5>
                       <div class="product-small-card__price-old"> 5699 <span class="product-small-card__currency-old"> ₴ </span>
                       </div>
                       <div class="product-small-card__price"> 4589 <span class="product-small-card__currency"> ₴ </span>
@@ -955,7 +1096,7 @@
                     </div>
                   </div>
                   <div class="products-preview__product-card">
-                    <div class="product-small-card">
+                    <div class="product-small-card  js-product">
                       <button class="product-small-card__btn">
                         <svg class="product-small-card__icon product-small-card__icon--active" width="20" height="17.6" viewBox="0 0 1024 1024">
                           <path d="M681.6 166c-67.6 0-129.6 31.6-169.6 83.6-40-52-102-83.6-169.6-83.6-118.2 0-214.4 96.6-214.4 215.4 0 55.8 21.2 108.8 59.8 149.2l324.2 327.4 318.4-321.6c42-40.6 65.6-95.8 65.6-155 0-118.8-96.2-215.4-214.4-215.4v0z">
@@ -965,7 +1106,7 @@
                       <a href="#" class="product-small-card__link">
                         <img src="./img/17400113.jpg" alt="Робот для мойки окон LogicPower LPW-002" class="product-small-card__img">
                       </a>
-                      <h5 class="product-small-card__title">Робот для мойки окон LogicPower LPW-002</h5>
+                      <h5 class="product-small-card__title"> Робот для мойки окон LogicPower LPW-002 </h5>
                       <div class="product-small-card__price-old"> 5699 <span class="product-small-card__currency-old"> ₴ </span>
                       </div>
                       <div class="product-small-card__price"> 4589 <span class="product-small-card__currency"> ₴ </span>
@@ -973,7 +1114,7 @@
                     </div>
                   </div>
                   <div class="products-preview__product-card">
-                    <div class="product-small-card">
+                    <div class="product-small-card  js-product">
                       <button class="product-small-card__btn">
                         <svg class="product-small-card__icon product-small-card__icon--active" width="20" height="17.6" viewBox="0 0 1024 1024">
                           <path d="M681.6 166c-67.6 0-129.6 31.6-169.6 83.6-40-52-102-83.6-169.6-83.6-118.2 0-214.4 96.6-214.4 215.4 0 55.8 21.2 108.8 59.8 149.2l324.2 327.4 318.4-321.6c42-40.6 65.6-95.8 65.6-155 0-118.8-96.2-215.4-214.4-215.4v0z">
@@ -983,7 +1124,115 @@
                       <a href="#" class="product-small-card__link">
                         <img src="./img/17400113.jpg" alt="Робот для мойки окон LogicPower LPW-002" class="product-small-card__img">
                       </a>
-                      <h5 class="product-small-card__title">Робот для мойки окон LogicPower LPW-002</h5>
+                      <h5 class="product-small-card__title"> Робот для мойки окон LogicPower LPW-002 </h5>
+                      <div class="product-small-card__price-old"> 5699 <span class="product-small-card__currency-old"> ₴ </span>
+                      </div>
+                      <div class="product-small-card__price"> 4589 <span class="product-small-card__currency"> ₴ </span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="products-preview__product-card">
+                    <div class="product-small-card hidden js-product">
+                      <button class="product-small-card__btn">
+                        <svg class="product-small-card__icon product-small-card__icon--active" width="20" height="17.6" viewBox="0 0 1024 1024">
+                          <path d="M681.6 166c-67.6 0-129.6 31.6-169.6 83.6-40-52-102-83.6-169.6-83.6-118.2 0-214.4 96.6-214.4 215.4 0 55.8 21.2 108.8 59.8 149.2l324.2 327.4 318.4-321.6c42-40.6 65.6-95.8 65.6-155 0-118.8-96.2-215.4-214.4-215.4v0z">
+                          </path>
+                        </svg>
+                      </button>
+                      <a href="#" class="product-small-card__link">
+                        <img src="./img/17400113.jpg" alt="Робот для мойки окон LogicPower LPW-002" class="product-small-card__img">
+                      </a>
+                      <h5 class="product-small-card__title"> Робот для мойки окон LogicPower LPW-002 </h5>
+                      <div class="product-small-card__price-old"> 5699 <span class="product-small-card__currency-old"> ₴ </span>
+                      </div>
+                      <div class="product-small-card__price"> 4589 <span class="product-small-card__currency"> ₴ </span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="products-preview__product-card">
+                    <div class="product-small-card hidden js-product">
+                      <button class="product-small-card__btn">
+                        <svg class="product-small-card__icon product-small-card__icon--active" width="20" height="17.6" viewBox="0 0 1024 1024">
+                          <path d="M681.6 166c-67.6 0-129.6 31.6-169.6 83.6-40-52-102-83.6-169.6-83.6-118.2 0-214.4 96.6-214.4 215.4 0 55.8 21.2 108.8 59.8 149.2l324.2 327.4 318.4-321.6c42-40.6 65.6-95.8 65.6-155 0-118.8-96.2-215.4-214.4-215.4v0z">
+                          </path>
+                        </svg>
+                      </button>
+                      <a href="#" class="product-small-card__link">
+                        <img src="./img/17400113.jpg" alt="Робот для мойки окон LogicPower LPW-002" class="product-small-card__img">
+                      </a>
+                      <h5 class="product-small-card__title"> Робот для мойки окон LogicPower LPW-002 </h5>
+                      <div class="product-small-card__price-old"> 5699 <span class="product-small-card__currency-old"> ₴ </span>
+                      </div>
+                      <div class="product-small-card__price"> 4589 <span class="product-small-card__currency"> ₴ </span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="products-preview__product-card">
+                    <div class="product-small-card hidden js-product">
+                      <button class="product-small-card__btn">
+                        <svg class="product-small-card__icon product-small-card__icon--active" width="20" height="17.6" viewBox="0 0 1024 1024">
+                          <path d="M681.6 166c-67.6 0-129.6 31.6-169.6 83.6-40-52-102-83.6-169.6-83.6-118.2 0-214.4 96.6-214.4 215.4 0 55.8 21.2 108.8 59.8 149.2l324.2 327.4 318.4-321.6c42-40.6 65.6-95.8 65.6-155 0-118.8-96.2-215.4-214.4-215.4v0z">
+                          </path>
+                        </svg>
+                      </button>
+                      <a href="#" class="product-small-card__link">
+                        <img src="./img/17400113.jpg" alt="Робот для мойки окон LogicPower LPW-002" class="product-small-card__img">
+                      </a>
+                      <h5 class="product-small-card__title"> Робот для мойки окон LogicPower LPW-002 </h5>
+                      <div class="product-small-card__price-old"> 5699 <span class="product-small-card__currency-old"> ₴ </span>
+                      </div>
+                      <div class="product-small-card__price"> 4589 <span class="product-small-card__currency"> ₴ </span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="products-preview__product-card">
+                    <div class="product-small-card hidden js-product">
+                      <button class="product-small-card__btn">
+                        <svg class="product-small-card__icon product-small-card__icon--active" width="20" height="17.6" viewBox="0 0 1024 1024">
+                          <path d="M681.6 166c-67.6 0-129.6 31.6-169.6 83.6-40-52-102-83.6-169.6-83.6-118.2 0-214.4 96.6-214.4 215.4 0 55.8 21.2 108.8 59.8 149.2l324.2 327.4 318.4-321.6c42-40.6 65.6-95.8 65.6-155 0-118.8-96.2-215.4-214.4-215.4v0z">
+                          </path>
+                        </svg>
+                      </button>
+                      <a href="#" class="product-small-card__link">
+                        <img src="./img/17400113.jpg" alt="Робот для мойки окон LogicPower LPW-002" class="product-small-card__img">
+                      </a>
+                      <h5 class="product-small-card__title"> Робот для мойки окон LogicPower LPW-002 </h5>
+                      <div class="product-small-card__price-old"> 5699 <span class="product-small-card__currency-old"> ₴ </span>
+                      </div>
+                      <div class="product-small-card__price"> 4589 <span class="product-small-card__currency"> ₴ </span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="products-preview__product-card">
+                    <div class="product-small-card hidden js-product">
+                      <button class="product-small-card__btn">
+                        <svg class="product-small-card__icon product-small-card__icon--active" width="20" height="17.6" viewBox="0 0 1024 1024">
+                          <path d="M681.6 166c-67.6 0-129.6 31.6-169.6 83.6-40-52-102-83.6-169.6-83.6-118.2 0-214.4 96.6-214.4 215.4 0 55.8 21.2 108.8 59.8 149.2l324.2 327.4 318.4-321.6c42-40.6 65.6-95.8 65.6-155 0-118.8-96.2-215.4-214.4-215.4v0z">
+                          </path>
+                        </svg>
+                      </button>
+                      <a href="#" class="product-small-card__link">
+                        <img src="./img/17400113.jpg" alt="Робот для мойки окон LogicPower LPW-002" class="product-small-card__img">
+                      </a>
+                      <h5 class="product-small-card__title"> Робот для мойки окон LogicPower LPW-002 </h5>
+                      <div class="product-small-card__price-old"> 5699 <span class="product-small-card__currency-old"> ₴ </span>
+                      </div>
+                      <div class="product-small-card__price"> 4589 <span class="product-small-card__currency"> ₴ </span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="products-preview__product-card">
+                    <div class="product-small-card hidden js-product">
+                      <button class="product-small-card__btn">
+                        <svg class="product-small-card__icon product-small-card__icon--active" width="20" height="17.6" viewBox="0 0 1024 1024">
+                          <path d="M681.6 166c-67.6 0-129.6 31.6-169.6 83.6-40-52-102-83.6-169.6-83.6-118.2 0-214.4 96.6-214.4 215.4 0 55.8 21.2 108.8 59.8 149.2l324.2 327.4 318.4-321.6c42-40.6 65.6-95.8 65.6-155 0-118.8-96.2-215.4-214.4-215.4v0z">
+                          </path>
+                        </svg>
+                      </button>
+                      <a href="#" class="product-small-card__link">
+                        <img src="./img/17400113.jpg" alt="Робот для мойки окон LogicPower LPW-002" class="product-small-card__img">
+                      </a>
+                      <h5 class="product-small-card__title"> Робот для мойки окон LogicPower LPW-002 </h5>
                       <div class="product-small-card__price-old"> 5699 <span class="product-small-card__currency-old"> ₴ </span>
                       </div>
                       <div class="product-small-card__price"> 4589 <span class="product-small-card__currency"> ₴ </span>
@@ -991,19 +1240,19 @@
                     </div>
                   </div>
                 </div>
-                <a href="#" class="products-preview__link"> Все акции <svg class="products-preview__icon" viewBox="0 0 1024 1024">
+                <button href="#" class="products-preview__btn js-products-open"> Все акции <svg class="products-preview__icon" viewBox="0 0 1024 1024">
                     <path d="M512.026 128.021c-23.565 0-42.667 19.102-42.667 42.667v561.92l-208.213-208.213c-16.713-16.713-43.825-16.666-60.48 0.107-16.571 16.687-16.523 43.635 0.107 60.267l311.253 311.253 311.241-311.241c16.619-16.619 16.619-43.567 0-60.186-16.61-16.61-43.537-16.623-60.16-0.030l-208.414 208.043v-561.92c0-23.564-19.102-42.667-42.667-42.667z">
                     </path>
                   </svg>
-                </a>
+                </button>
               </section>
             </div>
             <div class="main__products">
-              <section class="products-preview">
+              <section class="products-preview js-products">
                 <h2 class="products-preview__title"> Похожие товары других продавцов </h2>
                 <div class="products-preview__products">
                   <div class="products-preview__product-card">
-                    <div class="product-small-card">
+                    <div class="product-small-card  js-product">
                       <button class="product-small-card__btn">
                         <svg class="product-small-card__icon product-small-card__icon--active" width="20" height="17.6" viewBox="0 0 1024 1024">
                           <path d="M681.6 166c-67.6 0-129.6 31.6-169.6 83.6-40-52-102-83.6-169.6-83.6-118.2 0-214.4 96.6-214.4 215.4 0 55.8 21.2 108.8 59.8 149.2l324.2 327.4 318.4-321.6c42-40.6 65.6-95.8 65.6-155 0-118.8-96.2-215.4-214.4-215.4v0z">
@@ -1013,7 +1262,7 @@
                       <a href="#" class="product-small-card__link">
                         <img src="./img/17400113.jpg" alt="Робот для мойки окон LogicPower LPW-002" class="product-small-card__img">
                       </a>
-                      <h5 class="product-small-card__title">Робот для мойки окон LogicPower LPW-002</h5>
+                      <h5 class="product-small-card__title"> Робот для мойки окон LogicPower LPW-002 </h5>
                       <div class="product-small-card__price-old"> 5699 <span class="product-small-card__currency-old"> ₴ </span>
                       </div>
                       <div class="product-small-card__price"> 4589 <span class="product-small-card__currency"> ₴ </span>
@@ -1021,7 +1270,7 @@
                     </div>
                   </div>
                   <div class="products-preview__product-card">
-                    <div class="product-small-card">
+                    <div class="product-small-card  js-product">
                       <button class="product-small-card__btn">
                         <svg class="product-small-card__icon product-small-card__icon--active" width="20" height="17.6" viewBox="0 0 1024 1024">
                           <path d="M681.6 166c-67.6 0-129.6 31.6-169.6 83.6-40-52-102-83.6-169.6-83.6-118.2 0-214.4 96.6-214.4 215.4 0 55.8 21.2 108.8 59.8 149.2l324.2 327.4 318.4-321.6c42-40.6 65.6-95.8 65.6-155 0-118.8-96.2-215.4-214.4-215.4v0z">
@@ -1031,7 +1280,7 @@
                       <a href="#" class="product-small-card__link">
                         <img src="./img/17400113.jpg" alt="Робот для мойки окон LogicPower LPW-002" class="product-small-card__img">
                       </a>
-                      <h5 class="product-small-card__title">Робот для мойки окон LogicPower LPW-002</h5>
+                      <h5 class="product-small-card__title"> Робот для мойки окон LogicPower LPW-002 </h5>
                       <div class="product-small-card__price-old"> 5699 <span class="product-small-card__currency-old"> ₴ </span>
                       </div>
                       <div class="product-small-card__price"> 4589 <span class="product-small-card__currency"> ₴ </span>
@@ -1039,7 +1288,7 @@
                     </div>
                   </div>
                   <div class="products-preview__product-card">
-                    <div class="product-small-card">
+                    <div class="product-small-card  js-product">
                       <button class="product-small-card__btn">
                         <svg class="product-small-card__icon product-small-card__icon--active" width="20" height="17.6" viewBox="0 0 1024 1024">
                           <path d="M681.6 166c-67.6 0-129.6 31.6-169.6 83.6-40-52-102-83.6-169.6-83.6-118.2 0-214.4 96.6-214.4 215.4 0 55.8 21.2 108.8 59.8 149.2l324.2 327.4 318.4-321.6c42-40.6 65.6-95.8 65.6-155 0-118.8-96.2-215.4-214.4-215.4v0z">
@@ -1049,7 +1298,7 @@
                       <a href="#" class="product-small-card__link">
                         <img src="./img/17400113.jpg" alt="Робот для мойки окон LogicPower LPW-002" class="product-small-card__img">
                       </a>
-                      <h5 class="product-small-card__title">Робот для мойки окон LogicPower LPW-002</h5>
+                      <h5 class="product-small-card__title"> Робот для мойки окон LogicPower LPW-002 </h5>
                       <div class="product-small-card__price-old"> 5699 <span class="product-small-card__currency-old"> ₴ </span>
                       </div>
                       <div class="product-small-card__price"> 4589 <span class="product-small-card__currency"> ₴ </span>
@@ -1057,7 +1306,7 @@
                     </div>
                   </div>
                   <div class="products-preview__product-card">
-                    <div class="product-small-card">
+                    <div class="product-small-card  js-product">
                       <button class="product-small-card__btn">
                         <svg class="product-small-card__icon product-small-card__icon--active" width="20" height="17.6" viewBox="0 0 1024 1024">
                           <path d="M681.6 166c-67.6 0-129.6 31.6-169.6 83.6-40-52-102-83.6-169.6-83.6-118.2 0-214.4 96.6-214.4 215.4 0 55.8 21.2 108.8 59.8 149.2l324.2 327.4 318.4-321.6c42-40.6 65.6-95.8 65.6-155 0-118.8-96.2-215.4-214.4-215.4v0z">
@@ -1067,7 +1316,7 @@
                       <a href="#" class="product-small-card__link">
                         <img src="./img/17400113.jpg" alt="Робот для мойки окон LogicPower LPW-002" class="product-small-card__img">
                       </a>
-                      <h5 class="product-small-card__title">Робот для мойки окон LogicPower LPW-002</h5>
+                      <h5 class="product-small-card__title"> Робот для мойки окон LogicPower LPW-002 </h5>
                       <div class="product-small-card__price-old"> 5699 <span class="product-small-card__currency-old"> ₴ </span>
                       </div>
                       <div class="product-small-card__price"> 4589 <span class="product-small-card__currency"> ₴ </span>
@@ -1075,7 +1324,7 @@
                     </div>
                   </div>
                   <div class="products-preview__product-card">
-                    <div class="product-small-card">
+                    <div class="product-small-card  js-product">
                       <button class="product-small-card__btn">
                         <svg class="product-small-card__icon product-small-card__icon--active" width="20" height="17.6" viewBox="0 0 1024 1024">
                           <path d="M681.6 166c-67.6 0-129.6 31.6-169.6 83.6-40-52-102-83.6-169.6-83.6-118.2 0-214.4 96.6-214.4 215.4 0 55.8 21.2 108.8 59.8 149.2l324.2 327.4 318.4-321.6c42-40.6 65.6-95.8 65.6-155 0-118.8-96.2-215.4-214.4-215.4v0z">
@@ -1085,7 +1334,7 @@
                       <a href="#" class="product-small-card__link">
                         <img src="./img/17400113.jpg" alt="Робот для мойки окон LogicPower LPW-002" class="product-small-card__img">
                       </a>
-                      <h5 class="product-small-card__title">Робот для мойки окон LogicPower LPW-002</h5>
+                      <h5 class="product-small-card__title"> Робот для мойки окон LogicPower LPW-002 </h5>
                       <div class="product-small-card__price-old"> 5699 <span class="product-small-card__currency-old"> ₴ </span>
                       </div>
                       <div class="product-small-card__price"> 4589 <span class="product-small-card__currency"> ₴ </span>
@@ -1093,7 +1342,7 @@
                     </div>
                   </div>
                   <div class="products-preview__product-card">
-                    <div class="product-small-card">
+                    <div class="product-small-card  js-product">
                       <button class="product-small-card__btn">
                         <svg class="product-small-card__icon product-small-card__icon--active" width="20" height="17.6" viewBox="0 0 1024 1024">
                           <path d="M681.6 166c-67.6 0-129.6 31.6-169.6 83.6-40-52-102-83.6-169.6-83.6-118.2 0-214.4 96.6-214.4 215.4 0 55.8 21.2 108.8 59.8 149.2l324.2 327.4 318.4-321.6c42-40.6 65.6-95.8 65.6-155 0-118.8-96.2-215.4-214.4-215.4v0z">
@@ -1103,7 +1352,115 @@
                       <a href="#" class="product-small-card__link">
                         <img src="./img/17400113.jpg" alt="Робот для мойки окон LogicPower LPW-002" class="product-small-card__img">
                       </a>
-                      <h5 class="product-small-card__title">Робот для мойки окон LogicPower LPW-002</h5>
+                      <h5 class="product-small-card__title"> Робот для мойки окон LogicPower LPW-002 </h5>
+                      <div class="product-small-card__price-old"> 5699 <span class="product-small-card__currency-old"> ₴ </span>
+                      </div>
+                      <div class="product-small-card__price"> 4589 <span class="product-small-card__currency"> ₴ </span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="products-preview__product-card">
+                    <div class="product-small-card hidden js-product">
+                      <button class="product-small-card__btn">
+                        <svg class="product-small-card__icon product-small-card__icon--active" width="20" height="17.6" viewBox="0 0 1024 1024">
+                          <path d="M681.6 166c-67.6 0-129.6 31.6-169.6 83.6-40-52-102-83.6-169.6-83.6-118.2 0-214.4 96.6-214.4 215.4 0 55.8 21.2 108.8 59.8 149.2l324.2 327.4 318.4-321.6c42-40.6 65.6-95.8 65.6-155 0-118.8-96.2-215.4-214.4-215.4v0z">
+                          </path>
+                        </svg>
+                      </button>
+                      <a href="#" class="product-small-card__link">
+                        <img src="./img/17400113.jpg" alt="Робот для мойки окон LogicPower LPW-002" class="product-small-card__img">
+                      </a>
+                      <h5 class="product-small-card__title"> Робот для мойки окон LogicPower LPW-002 </h5>
+                      <div class="product-small-card__price-old"> 5699 <span class="product-small-card__currency-old"> ₴ </span>
+                      </div>
+                      <div class="product-small-card__price"> 4589 <span class="product-small-card__currency"> ₴ </span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="products-preview__product-card">
+                    <div class="product-small-card hidden js-product">
+                      <button class="product-small-card__btn">
+                        <svg class="product-small-card__icon product-small-card__icon--active" width="20" height="17.6" viewBox="0 0 1024 1024">
+                          <path d="M681.6 166c-67.6 0-129.6 31.6-169.6 83.6-40-52-102-83.6-169.6-83.6-118.2 0-214.4 96.6-214.4 215.4 0 55.8 21.2 108.8 59.8 149.2l324.2 327.4 318.4-321.6c42-40.6 65.6-95.8 65.6-155 0-118.8-96.2-215.4-214.4-215.4v0z">
+                          </path>
+                        </svg>
+                      </button>
+                      <a href="#" class="product-small-card__link">
+                        <img src="./img/17400113.jpg" alt="Робот для мойки окон LogicPower LPW-002" class="product-small-card__img">
+                      </a>
+                      <h5 class="product-small-card__title"> Робот для мойки окон LogicPower LPW-002 </h5>
+                      <div class="product-small-card__price-old"> 5699 <span class="product-small-card__currency-old"> ₴ </span>
+                      </div>
+                      <div class="product-small-card__price"> 4589 <span class="product-small-card__currency"> ₴ </span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="products-preview__product-card">
+                    <div class="product-small-card hidden js-product">
+                      <button class="product-small-card__btn">
+                        <svg class="product-small-card__icon product-small-card__icon--active" width="20" height="17.6" viewBox="0 0 1024 1024">
+                          <path d="M681.6 166c-67.6 0-129.6 31.6-169.6 83.6-40-52-102-83.6-169.6-83.6-118.2 0-214.4 96.6-214.4 215.4 0 55.8 21.2 108.8 59.8 149.2l324.2 327.4 318.4-321.6c42-40.6 65.6-95.8 65.6-155 0-118.8-96.2-215.4-214.4-215.4v0z">
+                          </path>
+                        </svg>
+                      </button>
+                      <a href="#" class="product-small-card__link">
+                        <img src="./img/17400113.jpg" alt="Робот для мойки окон LogicPower LPW-002" class="product-small-card__img">
+                      </a>
+                      <h5 class="product-small-card__title"> Робот для мойки окон LogicPower LPW-002 </h5>
+                      <div class="product-small-card__price-old"> 5699 <span class="product-small-card__currency-old"> ₴ </span>
+                      </div>
+                      <div class="product-small-card__price"> 4589 <span class="product-small-card__currency"> ₴ </span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="products-preview__product-card">
+                    <div class="product-small-card hidden js-product">
+                      <button class="product-small-card__btn">
+                        <svg class="product-small-card__icon product-small-card__icon--active" width="20" height="17.6" viewBox="0 0 1024 1024">
+                          <path d="M681.6 166c-67.6 0-129.6 31.6-169.6 83.6-40-52-102-83.6-169.6-83.6-118.2 0-214.4 96.6-214.4 215.4 0 55.8 21.2 108.8 59.8 149.2l324.2 327.4 318.4-321.6c42-40.6 65.6-95.8 65.6-155 0-118.8-96.2-215.4-214.4-215.4v0z">
+                          </path>
+                        </svg>
+                      </button>
+                      <a href="#" class="product-small-card__link">
+                        <img src="./img/17400113.jpg" alt="Робот для мойки окон LogicPower LPW-002" class="product-small-card__img">
+                      </a>
+                      <h5 class="product-small-card__title"> Робот для мойки окон LogicPower LPW-002 </h5>
+                      <div class="product-small-card__price-old"> 5699 <span class="product-small-card__currency-old"> ₴ </span>
+                      </div>
+                      <div class="product-small-card__price"> 4589 <span class="product-small-card__currency"> ₴ </span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="products-preview__product-card">
+                    <div class="product-small-card hidden js-product">
+                      <button class="product-small-card__btn">
+                        <svg class="product-small-card__icon product-small-card__icon--active" width="20" height="17.6" viewBox="0 0 1024 1024">
+                          <path d="M681.6 166c-67.6 0-129.6 31.6-169.6 83.6-40-52-102-83.6-169.6-83.6-118.2 0-214.4 96.6-214.4 215.4 0 55.8 21.2 108.8 59.8 149.2l324.2 327.4 318.4-321.6c42-40.6 65.6-95.8 65.6-155 0-118.8-96.2-215.4-214.4-215.4v0z">
+                          </path>
+                        </svg>
+                      </button>
+                      <a href="#" class="product-small-card__link">
+                        <img src="./img/17400113.jpg" alt="Робот для мойки окон LogicPower LPW-002" class="product-small-card__img">
+                      </a>
+                      <h5 class="product-small-card__title"> Робот для мойки окон LogicPower LPW-002 </h5>
+                      <div class="product-small-card__price-old"> 5699 <span class="product-small-card__currency-old"> ₴ </span>
+                      </div>
+                      <div class="product-small-card__price"> 4589 <span class="product-small-card__currency"> ₴ </span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="products-preview__product-card">
+                    <div class="product-small-card hidden js-product">
+                      <button class="product-small-card__btn">
+                        <svg class="product-small-card__icon product-small-card__icon--active" width="20" height="17.6" viewBox="0 0 1024 1024">
+                          <path d="M681.6 166c-67.6 0-129.6 31.6-169.6 83.6-40-52-102-83.6-169.6-83.6-118.2 0-214.4 96.6-214.4 215.4 0 55.8 21.2 108.8 59.8 149.2l324.2 327.4 318.4-321.6c42-40.6 65.6-95.8 65.6-155 0-118.8-96.2-215.4-214.4-215.4v0z">
+                          </path>
+                        </svg>
+                      </button>
+                      <a href="#" class="product-small-card__link">
+                        <img src="./img/17400113.jpg" alt="Робот для мойки окон LogicPower LPW-002" class="product-small-card__img">
+                      </a>
+                      <h5 class="product-small-card__title"> Робот для мойки окон LogicPower LPW-002 </h5>
                       <div class="product-small-card__price-old"> 5699 <span class="product-small-card__currency-old"> ₴ </span>
                       </div>
                       <div class="product-small-card__price"> 4589 <span class="product-small-card__currency"> ₴ </span>
@@ -1111,11 +1468,11 @@
                     </div>
                   </div>
                 </div>
-                <a href="#" class="products-preview__link"> Все акции <svg class="products-preview__icon" viewBox="0 0 1024 1024">
+                <button href="#" class="products-preview__btn js-products-open"> Все акции <svg class="products-preview__icon" viewBox="0 0 1024 1024">
                     <path d="M512.026 128.021c-23.565 0-42.667 19.102-42.667 42.667v561.92l-208.213-208.213c-16.713-16.713-43.825-16.666-60.48 0.107-16.571 16.687-16.523 43.635 0.107 60.267l311.253 311.253 311.241-311.241c16.619-16.619 16.619-43.567 0-60.186-16.61-16.61-43.537-16.623-60.16-0.030l-208.414 208.043v-561.92c0-23.564-19.102-42.667-42.667-42.667z">
                     </path>
                   </svg>
-                </a>
+                </button>
               </section>
             </div>
             <div class="main__videos">
@@ -1179,6 +1536,9 @@
     <!-- END content -->
     <!-- BEGIN scripts -->
     <script type="text/javascript" src="js/app.js"></script>
+    <script src="js/components/side-menu-burger.js"></script>
+    <script src="js/components/side-menu__info.js"></script>
+    <script src="js/components/products.js"></script>
     <!-- END scripts -->
   </body>
 </html>

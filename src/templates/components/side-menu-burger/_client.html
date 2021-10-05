@@ -1,0 +1,13 @@
+<ul class="client">
+  {% import "../../data/side-menu-clients.html" as data %}
+  {% for item in data.items %}
+  <li class="client__item">
+    <a href="{{item.linkUrl}}" class="client__link">
+      <div class="client__icon {{item.class}}">
+        {{mixins.icon(item.svg)}}
+      </div>
+      {{item.name}}
+    </a>
+  </li>
+  {% endfor %}
+</ul>

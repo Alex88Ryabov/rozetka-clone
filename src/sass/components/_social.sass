@@ -15,8 +15,12 @@
     width: 32px
     height: 32px 
     border-radius: 50%
+    transition: all .2s ease-in-out
     &:not(:last-child)
       margin-right: 8px     
+    &:hover,
+    &:active
+      opacity: 0.8
     &--fb
       background-color: #506098
     &--tw
@@ -25,6 +29,7 @@
       background-color: #e90000
     &--ins
       background: linear-gradient(45deg,#ffb700 14.65%,#ff6800 31.68%,#cb217d 54.72%,#7e00aa 85.35%)
+      
     &--vib
       background-color: #7d3daf
     &--tel
@@ -38,8 +43,10 @@
     fill: #fff
   &-youtube
     fill: #fff
+    font-size: 20px
   &-instagram
     fill: #fff
+    font-size: 22px
   &-viber
     fill: #fff
   &-telegram

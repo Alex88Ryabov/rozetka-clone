@@ -7,6 +7,7 @@
         <a href="{{item.href}}" class="sidebar__link">
           {{mixins.icon(item.svg)}}
           {{item.name}}
+          <img src="{{item.imgUrl}}" class="sidebar__img">
         </a>
       </li>
 
@@ -25,14 +26,14 @@
           Устанавливайте наши приложения
         </h4>
         <a href="#" class="stores__link">
-          <img src="../img/button-google-play-ru.svg" alt="" class="stores__img">
+          <img src="./img/button-google-play-ru.svg" alt="" class="stores__img">
         </a>
         <a href="#" class="stores__link">
-          <img src="../img/button-appstore-ru.svg" alt="" class="stores__img">
+          <img src="./img/button-appstore-ru.svg" alt="" class="stores__img">
         </a>
-        
+
       </div>
-      
+
     </div>
     <div class="sidebar__social">
       {% include "../_social.html" %}
