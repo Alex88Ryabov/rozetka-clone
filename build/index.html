@@ -173,16 +173,16 @@
                     </li>
                   </ul>
                 </li>
-                <li class="info__part">
-                  <div class="info__select">
+                <li class="info__part js-part">
+                  <div class="info__row">
                     <h4 class="info__title"> Партнерам </h4>
-                    <button class="info__btn">
+                    <button class="info__btn js-info-btn">
                       <svg class="icon icon-arrow-small-down">
                         <use xlink:href="img/sprite.svg#icon-arrow-small-down"></use>
                       </svg>
                     </button>
                   </div>
-                  <ul class="info__list">
+                  <ul class="info__list js-info-list">
                     <li class="info__item">
                       <a href="#" class="info__link"> Продавать на Розетке </a>
                     </li>
@@ -196,16 +196,16 @@
                       <a href="#" class="info__link"> Аренда помещений </a>
                   </ul>
                 </li>
-                <li class="info__part">
-                  <div class="info__select">
+                <li class="info__part js-part">
+                  <div class="info__row">
                     <h4 class="info__title"> Сервисы </h4>
-                    <button class="info__btn">
+                    <button class="info__btn js-info-btn">
                       <svg class="icon icon-arrow-small-down">
                         <use xlink:href="img/sprite.svg#icon-arrow-small-down"></use>
                       </svg>
                     </button>
                   </div>
-                  <ul class="info__list">
+                  <ul class="info__list js-info-list">
                     <li class="info__item">
                       <a href="#" class="info__link"> Бонусный счёт </a>
                     </li>
@@ -1482,81 +1482,47 @@
               </section>
             </div>
             <div class="main__videos">
-              <!-- <div class="video">
-  <div class="js-video">
-    <div class="video__header">
-      <h2 class="video__title">
-        Новые видео на канале
-        <a href="#">ROZETKA</a>
-      </h2>
-      <a href="#" class="video__subscribe">
-        <div class="video__button">
-          <svg class="video__icon" viewBox="0 0 1024 1024">
-            <path
-              d="M798.013 370.998c0-53.218-39.158-96.043-87.522-96.043-65.526-3.082-132.361-4.25-200.606-4.25h-21.191c-68.124 0-135.080 1.188-200.606 4.25-48.344 0-87.401 43.046-87.401 96.285-2.941 42.2-4.27 84.36-4.15 126.419s1.188 84.219 4.029 126.439c0 53.218 39.158 96.405 87.401 96.405 68.849 3.203 139.451 4.613 211.262 4.492q107.867 0.363 211.262-4.492c48.344 0 87.522-43.167 87.522-96.405 2.84-42.301 4.15-84.34 4.029-126.56q0.322-63.169-4.029-126.54zM441.378 613.683v-232.412l171.519 116.146z">
-            </path>
-          </svg>
-          YouTube
-        </div>
-      </a>
-    </div>
-    <div class="video__content">
-      <ul class="video__list">
-        <li class="video__item">
-          <iframe width="269" height="150" src="https://www.youtube.com/embed/nrPpRWSkzjI" title="YouTube video player"
-            frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowfullscreen>
-          </iframe>
-          <h4 class="video__description">
-            ПРОСТО ТА ШВИДКО | Огляд Mesh-системи TP-LINK Deco X60
-          </h4>
-          <time class="video__date">
-            27 сентября 2021 г.
-          </time>
-        </li>
-        <li class="video__item">
-          <iframe width="269" height="150" src="https://www.youtube.com/embed/1rz-5O2AX2Q" title="YouTube video player"
-            frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowfullscreen></iframe>
-          <h4 class="video__description">
-            "ДОСТУПНИЙ" СКЛАДАНИЙ СМАРТФОН? Огляд Samsung Galaxy Z Flip 3
-          </h4>
-          <time class="video__date">
-            24 сентября 2021 г.
-          </time>
-        </li>
-        <li class="video__item">
-          <iframe width="269" height="150" src="https://www.youtube.com/embed/l4ML-XFXEuA" title="YouTube video player"
-            frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowfullscreen></iframe>
-          <h4 class="video__description">
-            Cаундбар – що це таке? Обираємо звук для ТВ
-          </h4>
-          <time class="video__date">
-            22 сентября 2021 г.
-          </time>
-        </li>
-        <li class="video__item">
-          <iframe width="269" height="150" src="https://www.youtube.com/embed/YEgQ1Fk1Qwg" title="YouTube video player"
-            frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowfullscreen></iframe>
-          <h4 class="video__description">
-            ДРОН НОВОГО РІВНЯ! Огляд дрону DJI FPV
-          </h4>
-          <time class="video__date">
-            21 сентября 2021 г.
-          </time>
-        </li>
-
-
-      </ul>
-    </div>
-  </div>
-</div> -->
+              <div class="video">
+                <div class="js-video">
+                  <div class="video__header">
+                    <h2 class="video__title"> Новые видео на канале <a href="#">ROZETKA</a>
+                    </h2>
+                    <a href="#" class="video__subscribe">
+                      <div class="video__button">
+                        <svg class="video__icon" viewBox="0 0 1024 1024">
+                          <path d="M798.013 370.998c0-53.218-39.158-96.043-87.522-96.043-65.526-3.082-132.361-4.25-200.606-4.25h-21.191c-68.124 0-135.080 1.188-200.606 4.25-48.344 0-87.401 43.046-87.401 96.285-2.941 42.2-4.27 84.36-4.15 126.419s1.188 84.219 4.029 126.439c0 53.218 39.158 96.405 87.401 96.405 68.849 3.203 139.451 4.613 211.262 4.492q107.867 0.363 211.262-4.492c48.344 0 87.522-43.167 87.522-96.405 2.84-42.301 4.15-84.34 4.029-126.56q0.322-63.169-4.029-126.54zM441.378 613.683v-232.412l171.519 116.146z">
+                          </path>
+                        </svg> YouTube
+                      </div>
+                    </a>
+                  </div>
+                  <div class="video__content">
+                    <ul class="video__list">
+                      <li class="video__item">
+                        <iframe width="269" height="150" src="https://www.youtube.com/embed/nrPpRWSkzjI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+                        </iframe>
+                        <h4 class="video__description"> ПРОСТО ТА ШВИДКО | Огляд Mesh-системи TP-LINK Deco X60 </h4>
+                        <time class="video__date"> 27 сентября 2021 г. </time>
+                      </li>
+                      <li class="video__item">
+                        <iframe width="269" height="150" src="https://www.youtube.com/embed/1rz-5O2AX2Q" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        <h4 class="video__description"> "ДОСТУПНИЙ" СКЛАДАНИЙ СМАРТФОН? Огляд Samsung Galaxy Z Flip 3 </h4>
+                        <time class="video__date"> 24 сентября 2021 г. </time>
+                      </li>
+                      <li class="video__item">
+                        <iframe width="269" height="150" src="https://www.youtube.com/embed/l4ML-XFXEuA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        <h4 class="video__description"> Cаундбар – що це таке? Обираємо звук для ТВ </h4>
+                        <time class="video__date"> 22 сентября 2021 г. </time>
+                      </li>
+                      <li class="video__item">
+                        <iframe width="269" height="150" src="https://www.youtube.com/embed/YEgQ1Fk1Qwg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        <h4 class="video__description"> ДРОН НОВОГО РІВНЯ! Огляд дрону DJI FPV </h4>
+                        <time class="video__date"> 21 сентября 2021 г. </time>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
             </div>
         </div>
         </main>
