@@ -5,15 +5,15 @@
 {% endmacro %}
 
 {% import "../data/products.html" as data %}
-{% macro products(title) %}
-<section class="products-preview js-products">
+{% macro products(title, productLength) %}
+<section class="products-preview js-products" data-length="{{productLength}}">
 
   <h2 class="products-preview__title">
     {{title}}
   </h2>
   <div class="products-preview__products js-product-cards">
     {% for product in data.products %}
-    <div class="products-preview__product-card">
+    <div class="products-preview__product-card js-product">
       {% include "components/main/_product-small-card.html" %}
     </div>
 

@@ -1,12 +1,12 @@
-{% import "../data/products-title.html" as data %}
+{% import "../data/section-products.html" as data %}
 
 <main class="main">
   {% include "../components/main/_hero.html" %}
 
 
-  {% for title in data.titles %}
+  {% for section in data.sectionProducts %}
   <div class="main__products">
-    {{mixins.products(title.name)}}
+    {{mixins.products(section.title, section.productsLength)}}
   </div>
   {% endfor %}
 
