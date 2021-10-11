@@ -24,4 +24,4 @@ function productsCardWidth() {
 
 };
 
-module.exports = productsCardWidth;
+  module.exports = productsCardWidth;
