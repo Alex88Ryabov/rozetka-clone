@@ -1,20 +1,26 @@
-{% import "../data/section-products.html" as data %}
-
-<main class="main">
-  {% include "../components/main/_hero.html" %}
+<main class="container js-container">
+  <main class="main js-main">
 
 
-  {% for section in data.sectionProducts %}
-  <div class="main__products">
-    {{mixins.products(section.title, section.productsLength)}}
-  </div>
-  {% endfor %}
+    <div class="main__in js-main-in">
+      {% include "../components/main/_hero.html" %}
+      {% include "../components/main/_sidebar.html" %}
+      {% import "../data/section-products.html" as data %}
 
-  <div class="main__videos">
-  {%include "../components/main/_video.html" %}
-  </div>
+      {% for section in data.sectionProducts %}
+      <div class="main__products">
+        {{mixins.products(section.title, section.productsLength)}}
+      </div>
+      {% endfor %}
+
+      <div class="main__videos">
+        {%include "../components/main/_video.html" %}
+      </div>
 
 
 
-  </div>
+    </div>
+  </main>
+
 </main>
+</div>

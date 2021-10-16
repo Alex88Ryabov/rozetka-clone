@@ -1,18 +1,29 @@
-<sidebar class="sidebar">
+<sidebar class="sidebar js-sidebar">
   <div class="sidebar__in js-sidebar-in">
-    <ul class="sidebar__list">
-      {% import "../../data/sidebar-items.html" as data %}
-      {% for item in data.sidebarItems %}
-      <li class="sidebar__item">
-        <a href="{{item.href}}" class="sidebar__link">
-          {{mixins.icon(item.svg)}}
-          {{item.name}}
-          <img src="{{item.imgUrl}}" class="sidebar__img">
-        </a>
-      </li>
+    <nav class="sidebar__nav">
+      <button class="sidebar__btn">
+        {{mixins.icon('catalog')}}
+      
+        Каталог товаров
+      </button>
+      <h2 class="sidebar__list-title">Каталог товаров</h2>
+      <ul class="sidebar__list">
+        {% import "../../data/sidebar-items.html" as data %}
+        {% for item in data.sidebarItems %}
+        <li class="sidebar__item">
+          <a href="{{item.href}}" class="sidebar__link">
+            {{mixins.icon(item.svg)}}
+            {{item.name}}
+            {{mixins.icon(item.svgmedia)}}
+            <img src="{{item.imgUrl}}" class="sidebar__img">
+          </a>
+        </li>
+      
+        {% endfor %}
+      </ul>
+    </nav>
+    
 
-      {% endfor %}
-    </ul>
     <a href="#" class="sidebar__help">
       {{mixins.icon('help-center')}}
       Справочный центр
